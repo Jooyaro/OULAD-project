@@ -4,11 +4,12 @@ The goal of this project is to predict the students’ success and failure in on
 For this project, we collected the partial behavioral data of students from the $1/3$ and $1/2$ periods of courses and predicted their likelihood of completing the courses using various machine learning models. The original datasets consist of seven datasets used in this project, containing information about courses, students, and their interactions with the virtual learning environment (VLE) across seven selected courses (modules). Specifically, the datasets include demographic information about students (gender, age, IMD, region, highest education, disability), behavioral data (number of clicks and views by material), and assessment data (homework submission dates, scores). 
 
 
-### Supervised Learning Models and Results
+### Supervised Learning Models and their Results
 Six supervised learning algorithms were used to predict the success or failure of students based on their data from the $1/3$ and $1/2$ periods of the courses: Logistic Regression with Lasso Regularization, Support Vector Machine (SVM), Decision Tree, Random Forest, Naïve Bayes, and Bayesian Neural Network. Among them, we would like to describe three algorithms in more detail: Random Forests, Naïve Bayes Classifier, and Bayesian Neural Network.
 
 The following tables present the accuracy and F1 score of six supervised learning models for the $1/3$ period data and $1/2$ period data. The F1 score, reflecting the model's overall performance, is the harmonic average of precision and recall. Among these models, Random Forests demonstrated superior performance.
 
+#### Table 1: Accuracy Score of supervised learning algorithms for the $1/3$ period data
 | Model                        | Accuracy | F1 Score |
 |------------------------------|----------|----------|
 | Logistic Regression (Lasso)  | 0.743    | 0.752    |
@@ -19,6 +20,7 @@ The following tables present the accuracy and F1 score of six supervised learnin
 | Bayesian Neural Network      | 0.659    | 0.709    |
 
 
+#### Table 2: Accuracy Score of supervised learning algorithms for the $1/2$ period data
 | Model                        | Accuracy | F1 Score |
 |------------------------------|----------|----------|
 | Logistic Regression (Lasso)  | 0.783    | 0.790    |
